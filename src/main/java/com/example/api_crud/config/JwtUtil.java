@@ -1,9 +1,7 @@
 package com.example.api_crud.config;
 
 import java.util.Date;
-
 import org.springframework.stereotype.Component;
-
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.JwtParser;
@@ -42,8 +40,6 @@ public class JwtUtil {
 		return null;
 	}
 	
-	
-
 	// Date tokenValidity = new Date(System.currentTimeMillis() +
 	// accessTokenValidity);
 	// return Jwts.builder().setClaims(claims).setExpiration(tokenValidity)

@@ -38,4 +38,5 @@ public class AuthController {
     public ResponseEntity<LinkedHashMap<String, Object>> registerUser(@RequestBody LoginRequest loginRequest) {
         return userService.loginUser(loginRequest);
     }
+    
 }
