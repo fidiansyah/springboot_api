@@ -98,6 +98,6 @@ public class JwtUtil {
 	public String getEmail(Claims claims) {
 		return claims.getSubject();
 	}
-
+	
 }
 

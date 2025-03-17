@@ -15,7 +15,6 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig implements WebMvcConfigurer {
@@ -78,4 +77,5 @@ public class SecurityConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/uploads/user-photos/**")
                 .addResourceLocations("file:uploads/user-photos/");
     }
+    
 }

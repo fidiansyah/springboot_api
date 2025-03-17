@@ -2,14 +2,17 @@ package com.example.api_crud.controller;
 
 import com.example.api_crud.model.request.UserDetailsRequest;
 import com.example.api_crud.service.UserDetailsService;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.swagger.v3.oas.annotations.tags.Tag;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+
+import io.swagger.v3.oas.annotations.tags.Tag;
 import java.util.LinkedHashMap;
 import java.util.UUID;
 
@@ -55,4 +58,5 @@ public class UserDetailsController {
 
         return userDetailsService.updateUserDetails(uuid, request, photo);
     }
+    
 }

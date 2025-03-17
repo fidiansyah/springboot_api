@@ -52,4 +52,5 @@ public class UserController {
     public ResponseEntity<LinkedHashMap<String, Object>> deleteUser(@PathVariable UUID uuid) {
         return userService.deleteUser(uuid);
     }
+    
 }

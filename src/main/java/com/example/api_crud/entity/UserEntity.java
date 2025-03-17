@@ -3,7 +3,6 @@ package com.example.api_crud.entity;
 import java.util.UUID;
 import jakarta.persistence.*;
 import lombok.Data;
-
 @Entity
 @Data
 @Table(name = "users", schema = "public")

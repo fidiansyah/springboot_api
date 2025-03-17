@@ -6,10 +6,12 @@ import com.example.api_crud.model.request.UserDetailsRequest;
 import com.example.api_crud.model.response.UserDetailsResponse;
 import com.example.api_crud.repository.UserDetailsRepository;
 import com.example.api_crud.repository.UserRepository;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
+
 import java.time.LocalDate;
 import java.util.LinkedHashMap;
 import java.util.Optional;
@@ -130,4 +132,5 @@ public class UserDetailsService {
             null);
         return response;
     }
+
 }
